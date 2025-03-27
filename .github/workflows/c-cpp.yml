@@ -22,5 +22,5 @@ jobs:
       - name: Compile the program
         run: g++ -Wall -o bank_app driver.cpp bank.cpp
 
-      - name: Run the application
-        run: ./bank_app
+      - name: Run the application with predefined input
+        run: echo -e "1\n123\nJohn Doe\n1000\n8\n" | ./bank_app
